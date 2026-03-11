@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Send, User, MessageSquare, CheckCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, Send, User, MessageSquare, CheckCircle, Linkedin, Github, Facebook } from 'lucide-react'
 import { useState } from 'react'
 
 const Contact = () => {
@@ -114,9 +114,46 @@ const Contact = () => {
                 className="p-6 bg-gradient-to-br from-slate-900 to-blue-900 rounded-xl text-white"
               >
                 <h3 className="text-lg font-bold mb-2">Let's Build Something Great</h3>
-                <p className="text-sm text-blue-50">
+                <p className="text-sm text-blue-50 mb-4">
                   I'm always excited to work on innovative projects and collaborate with talented teams.
                 </p>
+                
+                {/* Social Media Links */}
+                <div className="flex gap-3 mt-4">
+                  <motion.a
+                    href="https://linkedin.com/in/your-profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="p-2.5 bg-white/20 hover:bg-white/30 rounded-lg backdrop-blur-sm transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <Linkedin className="w-5 h-5" />
+                  </motion.a>
+                  <motion.a
+                    href="https://github.com/your-username"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="p-2.5 bg-white/20 hover:bg-white/30 rounded-lg backdrop-blur-sm transition-colors"
+                    aria-label="GitHub"
+                  >
+                    <Github className="w-5 h-5" />
+                  </motion.a>
+                  <motion.a
+                    href="https://facebook.com/your-profile"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="p-2.5 bg-white/20 hover:bg-white/30 rounded-lg backdrop-blur-sm transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <Facebook className="w-5 h-5" />
+                  </motion.a>
+                </div>
               </motion.div>
             </div>
 

@@ -38,7 +38,7 @@ const ScrollToTop = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={scrollToTop}
-          className="fixed bottom-8 right-8 z-50 group"
+          className="fixed bottom-14 right-8 z-50 group"
           aria-label="Scroll to top"
         >
           {/* Outer ring with gradient */}
@@ -57,7 +57,7 @@ const ScrollToTop = () => {
             />
             
             {/* Button content */}
-            <div className="relative w-14 h-14 bg-white dark:bg-slate-800 rounded-full shadow-lg flex items-center justify-center border-2 border-slate-200 dark:border-slate-700 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-colors">
+            <div className="relative w-12 h-12 bg-white dark:bg-slate-800 rounded-full shadow-lg flex items-center justify-center border-2 border-slate-200 dark:border-slate-700 group-hover:border-blue-500 dark:group-hover:border-blue-400 transition-colors">
               <motion.div
                 animate={{ y: [0, -3, 0] }}
                 transition={{
@@ -66,7 +66,7 @@ const ScrollToTop = () => {
                   ease: "easeInOut",
                 }}
               >
-                <ArrowUp className="w-6 h-6 text-slate-700 dark:text-slate-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
+                <ArrowUp className="w-5 h-5 text-slate-700 dark:text-slate-300 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors" />
               </motion.div>
             </div>
 
