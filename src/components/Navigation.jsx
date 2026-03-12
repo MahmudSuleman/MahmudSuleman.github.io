@@ -27,7 +27,7 @@ const Navigation = ({ darkMode, setDarkMode }) => {
     <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       scrolled ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
-      <nav className="container lg:max-w-6xl mx-auto px-4 lg:px-0 py-4">
+      <nav className="lg:max-w-6xl mx-auto px-4 lg:px-0 py-4">
         <div className="flex justify-between items-center">
           <a href="#hero" className="text-lg font-bold text-slate-900 dark:text-white">
             MS
