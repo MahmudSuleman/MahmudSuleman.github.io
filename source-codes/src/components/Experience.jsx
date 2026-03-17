@@ -4,10 +4,21 @@ import { Calendar, MapPin, Briefcase } from 'lucide-react'
 const Experience = () => {
   const experiences = [
     {
+      title: 'I.T and Support Officer',
+      company: 'Environmental Protection Authority',
+      location: 'Accra, Ghana',
+      period: 'Feb 2026 - Present',
+      responsibilities: [
+        'IT Operations Management', 
+        'System maintenance and troubleshooting',        
+        'Network diagnosis and troubleshooting',
+      ],
+    },
+    {
       title: 'Application Support Engineer and IT Officer',
       company: 'Lakeside University College',
       location: 'Accra, Ghana',
-      period: 'May 2022 - Present',
+      period: 'May 2022 - Jan 2026',
       responsibilities: [
         'Application Support Engineering',
         'IT Operations Management',
